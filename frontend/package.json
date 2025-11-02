@@ -1,0 +1,30 @@
+{
+  "name": "ratingnet-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node --max-old-space-size=4096 ./node_modules/typescript/bin/tsc -b",
+    "build:vite": "node --max-old-space-size=4096 ./node_modules/vite/bin/vite.js build",
+    "build:all": "npm run build; npm run build:vite",
+    "preview": "vite preview",
+    "genabi": "node ./scripts/genabi.mjs"
+  },
+  "dependencies": {
+    "@fhevm/mock-utils": "0.3.0-1",
+    "@zama-fhe/relayer-sdk": "^0.3.0-5",
+    "@vitejs/plugin-react": "^5.1.1",
+    "ethers": "^6.13.2",
+    "idb": "^8.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
