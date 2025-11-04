@@ -6,6 +6,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deploy, log } = deployments;
   const { deployer } = await getNamedAccounts();
 
+  // Deploy RatingNet contract with FHEVM support
   log("Deploying RatingNet...");
   const result = await deploy("RatingNet", {
     from: deployer,
