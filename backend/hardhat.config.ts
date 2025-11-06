@@ -9,6 +9,7 @@ import { HDNodeWallet, Mnemonic } from "ethers";
 import type { HardhatUserConfig } from "hardhat/config";
 
 // Helper function to get accounts from mnemonic or private key
+// Supports both mnemonic phrase and direct private key configuration
 function getAccounts() {
   if (process.env.MNEMONIC) {
     // Derive the first account (index 0) from the mnemonic
