@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  // Base path for deployment, defaults to root
   base: process.env.VITE_BASE_PATH || "/",
   server: {
     port: 5173,
