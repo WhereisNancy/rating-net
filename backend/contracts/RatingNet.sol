@@ -7,6 +7,7 @@ import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 /// @title RatingNet - Anonymous Encrypted Rating Network
 /// @notice Stores encrypted rating sums per subject and computes encrypted averages on-chain using FHEVM.
 ///         Rating range is clamped to [1, 5] fully under encryption. The contract does not store rater identities.
+/// @dev Inherits from ZamaEthereumConfig for FHEVM network configuration
 contract RatingNet is ZamaEthereumConfig {
     struct Stats {
         euint32 sum;   // Encrypted sum of ratings
