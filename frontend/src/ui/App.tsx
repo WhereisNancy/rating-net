@@ -23,6 +23,7 @@ function isEip1193(p: unknown): p is Eip1193Provider {
   return !!p && typeof p === "object" && "request" in (p as any);
 }
 
+// Get human-readable status text for UI display
 function getStatusText(status: FhevmDetailedStatus): string {
   const statusMap: Record<FhevmDetailedStatus, string> = {
     "idle": "Initializing",
