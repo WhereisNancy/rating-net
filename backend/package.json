@@ -12,6 +12,7 @@
     "test": "hardhat test"
   },
   "dependencies": {
+    // Updated FHEVM dependencies for improved performance
     "@fhevm/hardhat-plugin": "^0.3.0-1",
     "@fhevm/solidity": "^0.9.1",
     "hardhat-deploy": "^0.12.4",
