@@ -42,7 +42,6 @@ lerna-debug.log*
 fhevmTemp/
 
 # Frontend build
-frontend/dist/
 frontend/.vite/
 
 # Backend
